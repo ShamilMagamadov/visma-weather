@@ -15,15 +15,29 @@
     </parent>
 
     <!-->
+    Viktige ting vi lærte idag
         1. Terminal: mvn clean install for å lage target/jar.fil
         2. java -jar target/visma-weather-1.0-SNAPSHOT.jar, lager executable jar
         3. lag .gitignore med: target/*, .idea/*, *.iml
+        4. Bean er klasser som vi ikke eier, ligger i spring rammeverket. Component er for klasser vi har laget selv
+        5. Marker et eller annet metode/klasse, option + command + v MAGI!
     </-->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
